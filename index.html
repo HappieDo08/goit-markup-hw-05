@@ -13,7 +13,7 @@
 
 <body>
     <!--This is header-->
-    <header class="header header-container">
+    <header class="header">
         <div class="container header-container">
             <!-- Navigation Bar -->
             <nav class="header-navigation">
@@ -34,13 +34,13 @@
                 </ul>
 
             </nav>
-            <address>
+            <address class="address">
             <ul class="header-address lists">
-                <li>
+                <li class="item">
                     <a class="header-address-link links" href="mailto:info@devstudio.com"
                     target="_blank" rel="noopener noreferrer">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="item">
                     <a class="header-address-link links" href="tel:+110001111111"
                     target="_blank" rel="noopener noreferrer">+11 (000) 111-11-11</a>
                 </li>
@@ -58,7 +58,7 @@
                     Effective Solutions <br />
                     for Your Business
                 </h1>
-                <button class="hero-button button" type="button">
+                <button class="hero-button button" type="button" data-modal-open>
                     Order service
                 </button>
             </div>
@@ -71,7 +71,7 @@
                     <li class="features-item">
                         <div class="benefits-svg-box">
                             <svg class="benefits-icon-svg" width="64" height="64">
-                                <use href="./images/icons.svg#benefits-antenna"></use>
+                                <use href="./images/icons.svg#antenna"></use>
                             </svg>
                         </div>
                         <h3 class="features-title titles">Strategy</h3>
@@ -84,7 +84,7 @@
                     <li class="features-item">
                         <div class="benefits-svg-box">
                             <svg lass="benefits-icon-svg" width="64" height="64">
-                                <use href="./images/icons.svg#benefits-clock"></use>
+                                <use href="./images/icons.svg#clock"></use>
                             </svg>
                         </div>
                         <h3 class="features-title titles">Punctuality</h3>
@@ -97,7 +97,7 @@
                     <li class="features-item">
                         <div class="benefits-svg-box">
                             <svg lass="benefits-icon-svg" width="64" height="64">
-                                <use href="./images/icons.svg#benefits-diagram"></use>
+                                <use href="./images/icons.svg#diagram"></use>
                             </svg>
                         </div>
                         <h3 class="features-title titles">Diligence</h3>
@@ -110,7 +110,7 @@
                     <li class="features-item">
                         <div class="benefits-svg-box">
                             <svg lass="benefits-icon-svg" width="64" height="64">
-                                <use href="./images/icons.svg#benefits-astronaut"></use>
+                                <use href="./images/icons.svg#astronaut"></use>
                             </svg>
                         </div>
                         <h3 class="features-title titles">Technologies</h3>
@@ -412,6 +412,14 @@
         </div>
     </footer>
     <!--JS for modal -->
+
+    <div class="back-drop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close" data-modal-close>
+                <svg></
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
